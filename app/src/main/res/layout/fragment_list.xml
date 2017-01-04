@@ -1,0 +1,41 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.arihantjain.hitlist.ListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/viewPager"
+            android:layout_height="match_parent"
+            android:background="#E3F2FD">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/my_tab_layout"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:minHeight="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                app:tabTextColor="#ccc"
+                app:tabSelectedTextColor="@color/colorPrimary"
+                app:tabMode="scrollable"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabGravity="center"/>
+        </android.support.v4.view.ViewPager>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/red_cross_image"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
